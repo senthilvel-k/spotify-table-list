@@ -10,5 +10,5 @@ df5 = df[df.genre == 'jazz']
 frames = [df2, df3, df4, df5]
 result = pd.concat(frames)
 req = result[['track', 'artist', 'spotify_id']]
-final = req.sample(n=20)
+final = req.sample(n=21)
 print(tabulate(final, headers = 'keys', tablefmt = 'psql'))
